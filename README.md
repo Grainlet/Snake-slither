@@ -8,13 +8,13 @@ The Player's job is to defeat the "Red Snake" by maneuvering and attacking the s
 # Can You Survive The Snake?
 Click on the link attached to play the game and test your skills
 
-#Credits
+# Credits
 The neuroevolution guide attached in the guide page of the PlayerTwo website helped me alot
 &
 Thanks to Rishit Jain for sharing the structure of the NeuroEvolution and the format of Readme via his repository!
 
 
-#AI Transparency
+# AI Transparency
 Gemini was used to create the assets of the following:
 Snake Head,
 Snake Body
