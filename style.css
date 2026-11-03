@@ -43,7 +43,7 @@ button {
     display: block;
 }
 
-/* Main menu */
+
 
 #menu {
     background-image: url("assets/backgrounds/main_menu.png");
@@ -85,6 +85,24 @@ button {
     color: black;
 }
 
+.warn {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.warn:hover,
+.warn:focus-visible {
+    background: white;
+    color: black;
+}
+
 @keyframes promptPulse {
     0%, 100% {
         opacity: 1;
@@ -95,7 +113,7 @@ button {
     }
 }
 
-/* Game */
+
 
 #game-screen,
 #training-screen {
@@ -122,7 +140,7 @@ canvas {
 }
 
 #game-hud::after {
-    content: "WASD TO MOVE · AVOID THE RED SNAKE";
+    content: "WASD TO MOVE · DEFEAT THE RED SNAKE";
     color: #666;
 }
 
@@ -146,7 +164,7 @@ canvas {
     letter-spacing: 1.5px;
 }
 
-/* Victory / Defeat screen */
+
 
 #game-over-overlay {
     position: absolute;
@@ -202,7 +220,6 @@ canvas {
     gap: 16px;
 }
 
-/* Training */
 
 #training-screen {
     background: white;
@@ -254,3 +271,4 @@ canvas {
         max-height: 200px;
     }
 }
+

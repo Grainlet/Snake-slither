@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Arena</title>
+    <title>Survive The Snake</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
             <div class="menu-content">
                 <div class="menu-actions">
                     <button id="play-button" class="menu-button">PLAY AS SNAKE</button>
+                    <button id="warn" class="warn">TRAIN YOUR ENEMY BEFORE PLAYING!</button>
                     <button id="train-button" class="menu-button">TRAIN ENEMY AI</button>
                     <button id="watch-button" class="menu-button">WATCH ENEMY AI</button>
                 </div>
@@ -31,7 +32,7 @@
 
             <div id="pause-overlay">
                 <div>PAUSED</div>
-                <small>PRESS ESC TO RESUME</small>
+                <small>PRESS ESC TO CONTINUE PLAYING</small>
             </div>
 
             <div id="game-over-overlay">
@@ -50,7 +51,10 @@
         <section id="training-screen" class="screen">
             <canvas id="training-canvas"></canvas>
             <div id="generation-counter">GENERATION 1</div>
-            <div id="training-exit">PRESS ESC TO RETURN · ENEMY LEARNS TO GROW, HUNT, AND ENCIRCLE</div>
+            <div id="training-exit">PRESS ESC TO RETURN · ENEMY LEARNS HOW TO GROW, HUNT, AND DEFEAT THE PLAYER
+                <br>
+            MADE BY GOKUL
+            </div>
             <div id="watch-message" aria-live="polite"></div>
         </section>
     </main>
