@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Arena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app">
+        <section id="menu" class="screen active">
+            <div class="menu-content">
+                <div class="menu-actions">
+                    <button id="play-button" class="menu-button">PLAY AS SNAKE</button>
+                    <button id="train-button" class="menu-button">TRAIN ENEMY AI</button>
+                    <button id="watch-button" class="menu-button">WATCH ENEMY AI</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-screen" class="screen">
+            <canvas id="game-canvas"></canvas>
+
+            <div id="game-hud">
+                <div id="score">YOU: 2</div>
+                <div id="length">ENEMY: 2</div>
+            </div>
+
+            <div id="pause-overlay">
+                <div>PAUSED</div>
+                <small>PRESS ESC TO RESUME</small>
+            </div>
+
+            <div id="game-over-overlay">
+                <div class="game-over-box">
+                    <img id="victory-img" class="game-over-pic" src="assets/victory.png" alt="Victory">
+                    <img id="defeat-img" class="game-over-pic" src="assets/defeat.png" alt="Defeat">
+                    <div id="game-over-text">VICTORY</div>
+                    <div class="game-over-actions">
+                        <button id="restart-button" class="menu-button">PLAY AGAIN</button>
+                        <button id="game-over-menu-button" class="menu-button">MAIN MENU</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="training-screen" class="screen">
+            <canvas id="training-canvas"></canvas>
+            <div id="generation-counter">GENERATION 1</div>
+            <div id="training-exit">PRESS ESC TO RETURN · ENEMY LEARNS TO GROW, HUNT, AND ENCIRCLE</div>
+            <div id="watch-message" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script type="module" src="js/arena-main.js?v=5"></script>
+</body>
+</html>
