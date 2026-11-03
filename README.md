@@ -8,6 +8,9 @@ The Player's job is to defeat the "Red Snake" by maneuvering and attacking the s
 # Can You Survive The Snake?
 Click on the link attached to play the game and test your skills
 
+# How it works?
+During each training, each generation tests a series of networks across simulated episodes wher the snake recieves 12 real time inputs which include: angle, distance to player, nearest orb, current length and overall position. each gen gives a fitness score by consuming orbs, actively going around the player and a large bonus when it traps the player snake into a collision, at the end of each generation, highest scoring networks are preserved and used when the player decides to go against the AI.
+
 # Credits
 The neuroevolution guide attached in the guide page of the PlayerTwo website helped me alot
 &
